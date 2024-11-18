@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testando troca de contéudo</title>
+  </head>
+  <style>
+    body {
+      background-color: bisque;
+      color: rgb(69, 4, 4);
+      text-align: center;
+    }
+
+    .myImage {
+      width: 500px;
+      height: 380px;
+      margin: auto;
+    }
+  </style>
+
+  <body class="fundo">
+    <h1 id="titulo">
+      Testando mudança de cor de fundo do body, a cor da fonte e a imagem da
+      página
+    </h1>
+
+    <input type="button" value="Cor verde" id="verde" onclick="verde()" />
+    <input type="button" value="Cor azul" id="azul" onclick="azul()" />
+    <input type="button" value="Cor bisque" id="bisque" onclick="bisque()" />
+    <hr />
+    <img src="../imagem/download.jpeg" class="myImage" />
+
+    <script>
+      let header = document.getElementById("titulo");
+      //querySelector comando para uma ação
+      function verde() {
+        document.querySelector(".fundo").style.backgroundColor = "green";
+        document.querySelector(".fundo").style.color = "white";
+        document.querySelector(".myImage").src = "../imagem/Atividade.jpeg";
+        header.innerHTML = "Testando modo verde";
+      }
+      //querySelector comando para uma ação
+      function azul() {
+        document.querySelector(".fundo").style.backgroundColor = "blue";
+        document.querySelector(".fundo").style.color = "white";
+        document.querySelector(".myImage").src = "../imagem/download (2).jpeg";
+        header.innerHTML = "Testando modo azul";
+      }
+      //querySelector comando para uma ação
+
+      function bisque() {
+        document.querySelector(".fundo").style.backgroundColor = "bisque";
+        document.querySelector(".fundo").style.color = "black";
+        document.querySelector(".myImage").src = "../imagem/download.jpeg";
+      }
+    </script>
+  </body>
+</html>

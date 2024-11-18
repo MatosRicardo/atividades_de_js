@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testando For</title>
+  </head>
+  <body>
+    <h1>Testando o comando For</h1>
+
+    <script>
+      // for é uma laço de repetição
+      // N++ ou let++ é incremento e -- decremento
+      // Atribuição +="valor", Pode fazer a junção das contas, sem a necessidade de criar uma variável diferente, pode ser feito com qualquer operador.
+
+      //repeticão do texto
+      for (let n = 0; n <= 10; n++) {
+        document.write("A pro Debs é muito linda e muito inteligente!! <br>");
+      }
+      //impar
+      for (let n = 1; n <= 10; n += 2) {
+        document.write(n + "<br>");
+      }
+      // Decrecente
+      for (let n = 20; n >= 0; n--) {
+        document.write(n + "<br>");
+      }
+
+      // tabuada
+      let tabuada = prompt("Entre com a tabuada desejada");
+      for (let n = 0; n <= 10; n++) {
+        document.write(tabuada + " X " + n + " = " + tabuada * n + "<br>");
+      }
+    </script>
+  </body>
+</html>

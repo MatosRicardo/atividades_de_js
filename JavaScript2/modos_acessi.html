@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modos de visualização</title>
+  </head>
+  <body>
+    <style>
+      body {
+        text-align: center;
+      }
+    </style>
+
+    <script>
+      function escuro() {
+        document.querySelector("#titulo").innerHTML = "Testando Modo Escuro";
+        document.querySelector("body").style.backgroundColor = "black";
+        document.querySelector("body").style.color = "gray";
+        document.querySelector(".myImage").src = "../imagem/Atividade.jpeg";
+      }
+
+      function daltonico() {
+        document.querySelector("#titulo").innerHTML = "Testando Modo Daltôncio";
+        document.querySelector("body").style.backgroundColor = "pink";
+        document.querySelector("body").style.color = "#00ff00";
+        document.querySelector("body").style.fontSize = "16px";
+        document.querySelector(".myImage").src = "../imagem/Atividade.jpeg";
+      }
+      function normal() {
+        document.querySelector("#titulo").innerHTML = "Testando Modo Normal";
+        document.querySelector("body").style.backgroundColor = "white";
+        document.querySelector("body").style.color = "black";
+        document.querySelector("body").style.fontSize = "16px";
+        document.querySelector(".myImage").src = "../imagem/Atividade.jpeg";
+      }
+      function letra_a() {
+        document.querySelector("#titulo").innerHTML =
+          "Testando Modo Baixa Visual";
+        document.querySelector("body").style.backgroundColor = "white";
+        document.querySelector("body").style.color = "black";
+        document.querySelector("body").style.fontSize = "30px";
+        document.querySelector(".myImage").src = "../imagem/Atividade.jpeg";
+      }
+    </script>
+
+    <h1 id="titulo">Testando Modo Normal</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, ratione
+      illo quis maxime voluptatum qui cum! Pariatur voluptas voluptatum, totam
+      vitae maiores sequi quis quae aliquam omnis expedita provident ipsa cum
+      odio reiciendis temporibus laudantium harum saepe fugiat possimus. Dicta
+      modi illo nihil, possimus, tempora sint, ratione mollitia officiis esse
+      aperiam similique quidem culpa optio veniam. Quibusdam inventore nobis
+      provident molestiae quia praesentium blanditiis nesciunt, cupiditate,
+      aspernatur nemo fugit. Magni porro molestias possimus quasi quo
+      consectetur officiis esse ducimus fuga praesentium dolorum rerum sed eos
+      quis mollitia, autem veniam eligendi numquam, a quas quidem ipsa cum. Hic
+      unde officiis reiciendis.
+    </p>
+
+    <input type="button" value="Modo escuro" id="escuro" onclick="escuro()" />
+    <input
+      type="button"
+      value="Modo daltônico"
+      id="daltonico"
+      onclick="daltonico()"
+    />
+    <input type="button" value="Modo normal" id="normal" onclick="normal()" />
+    <input type="button" value="A+" id="letra_a" onclick="letra_a()" />
+
+    <hr />
+
+    <img
+      src="../imagem/089bd94941aedcb000fb3cc420363022e8ae6890_hq.gif"
+      alt=""
+      width="200px"
+    />
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quibusdam
+      fuga officia possimus error accusantium, soluta necessitatibus placeat
+      quisquam repudiandae dolore saepe cumque sunt ratione velit aspernatur
+      incidunt, unde facere alias. Unde expedita accusamus quis, molestiae vitae
+      corrupti quidem, atque perferendis iusto sequi nisi aspernatur dolor
+      labore esse, doloribus hic autem incidunt! Debitis delectus officiis ipsam
+      veritatis molestiae expedita reprehenderit. Ipsa nemo dolorum placeat
+      laudantium sint officia obcaecati minus? Voluptates facere dolorum
+      quisquam inventore dicta, alias provident! Doloremque, quis quaerat?
+      Quaerat deserunt officiis minus fugit iste quasi ratione, voluptates
+      quisquam mollitia ipsum soluta in. Animi provident quis natus aliquid ab!
+    </p>
+  </body>
+</html>
